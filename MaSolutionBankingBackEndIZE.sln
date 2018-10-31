@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.L2.Rest", "Banki
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.L2.Rest.Tests", "BankingApp.L2.Rest.Tests\BankingApp.L2.Rest.Tests.csproj", "{2A0A57FC-7060-4463-A9ED-D2F43A67EEB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaffoldedbanking", "Scaffoldedbanking\Scaffoldedbanking.csproj", "{A746474C-A8A3-45F4-BAF5-0721D7AE0F14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{2A0A57FC-7060-4463-A9ED-D2F43A67EEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A0A57FC-7060-4463-A9ED-D2F43A67EEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A0A57FC-7060-4463-A9ED-D2F43A67EEB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A746474C-A8A3-45F4-BAF5-0721D7AE0F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A746474C-A8A3-45F4-BAF5-0721D7AE0F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A746474C-A8A3-45F4-BAF5-0721D7AE0F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A746474C-A8A3-45F4-BAF5-0721D7AE0F14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
