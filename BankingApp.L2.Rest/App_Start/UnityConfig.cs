@@ -49,15 +49,15 @@ namespace BankingApp.L2.Rest
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            //container.RegisterType<IComptesRepository, ComptesRepositoryImpl_EF>();
-            var myMockRepository = new Mock<IComptesRepository>();
-            myMockRepository.Setup(o => o.FindAll()).Returns(
-                new List<Compte>() {
-                    new Compte{ Numero = "F1000", Proprietaire ="Amina", Solde=1000M},
-                    new Compte{ Numero = "F5000", Proprietaire ="Ons", Solde=1000M},
-                    new Compte{ Numero = "F7000", Proprietaire ="Syrine", Solde=1000M} 
-                });
-            container.RegisterInstance(myMockRepository.Object);
+            container.RegisterType<IComptesRepository, ComptesRepositoryImpl_EF>();
+            //var myMockRepository = new Mock<IComptesRepository>();
+            //myMockRepository.Setup(o => o.FindAll()).Returns(
+            //new List<Compte>() {
+            //new Compte { Numero = "F1000", Proprietaire ="Amina", Solde=1000M},
+            //new Compte { Numero = "F5000", Proprietaire ="Ons", Solde=1000M},
+            //new Compte { Numero = "F7000", Proprietaire ="Syrine", Solde=1000M} 
+            //});
+            //container.RegisterInstance(myMockRepository.Object);
             container.RegisterType<IComptesBusiness, ComptesBusinessImpl>();
         }
     }
