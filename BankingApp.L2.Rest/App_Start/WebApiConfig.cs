@@ -11,9 +11,9 @@ namespace BankingApp.L2.Rest
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            config.EnableCors();
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
